@@ -14,7 +14,7 @@ header('Access-Control-Allow-Methods: POST');
 
 // ---- CONFIG ----
 define('TO_EMAIL', 'YOUR_EMAIL@example.com');  // <-- change this
-define('SITE_NAME', 'kanyehyung portfolio');
+define('SITE_NAME', 'sofia dang website');
 // ----------------
 
 // Only allow POST requests
