@@ -132,7 +132,7 @@ document.addEventListener('keydown', e => {
 
 
 // ===== GITHUB API =====
-const GITHUB_USERNAME = 'kanyehyung';
+const GITHUB_USERNAME = 'sofia-ls-dang';
 let reposFetched = false;
 
 const LANG_COLORS = {
