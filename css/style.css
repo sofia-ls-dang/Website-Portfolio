@@ -154,23 +154,28 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Hamburger icon — always peeking out on left edge */
-.menu-trigger {
-  position: absolute;
+.menu-trigger-fixed {
+  position: fixed;
   top: 20px;
   left: 8px;
-  z-index: 20;
+  z-index: 200;
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding: 6px 4px;
   pointer-events: none;
 }
-.menu-trigger span {
+.menu-trigger-fixed span {
   display: block;
   width: 18px;
   height: 2px;
   background: var(--red);
-  transition: background 0.15s, width 0.2s;
+  transition: background 0.15s;
+}
+/* Turn white when menu is open */
+.menu:hover ~ .menu-trigger-fixed span,
+.menu-hover-zone:hover ~ .menu-trigger-fixed span {
+  background: var(--white);
 }
 .menu:hover .menu-trigger span { background: var(--white); }
 
@@ -558,14 +563,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 600;
   color: var(--gray2);
 }
-.course-row:hover .course-name { color: var(--white); }
-.course-tag {
-  font-family: var(--font-m);
-  font-size: 0.6rem;
-  color: var(--gray);
-  letter-spacing: 0.1em;
-  text-align: right;
-}
 
 /* ── CERTS ── */
 .cert-list { display: flex; flex-direction: column; gap: 1px; }
@@ -868,7 +865,6 @@ a { text-decoration: none; color: inherit; }
   .panel-header::after { left: 24px; }
   .sb-row { grid-template-columns: 100px 1fr; }
   .course-row { grid-template-columns: 70px 1fr; }
-  .course-tag { display: none; }
 }
 @media (max-width: 560px) {
   .layout { flex-direction: column; }
