@@ -3,12 +3,12 @@
   --red:     #cc0000;
   --red2:    #ff1a1a;
   --red3:    #fb6d6d;
-  --black:   #232323;
-  --black2:  #232323;
-  --black3:  #2a2a2a;
-  --white:   #e8e8e8;
-  --gray:    #616161;
-  --gray2:   #b8b8b8;
+  --black:  #0a0a0a;
+  --black2: #0a0a0a;
+  --black3: #1a1a1a;
+  --white:  #ffffff;
+  --gray:   #9ca3af;
+  --gray2:  #d7d7d7;
   --font-d:  'Bebas Neue', sans-serif;
   --font-b:  'Rajdhani', sans-serif;
   --font-m:  'Share Tech Mono', monospace;
@@ -372,15 +372,15 @@ a { text-decoration: none; color: inherit; }
   z-index: 1;
 }
 .panel-text {
-  font-family: 'DINPro', sans-serif;
-  font-size: 18px;
-  font-weight: 599;
-  line-height: 33px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 22px;
   color: var(--gray2);
   margin-bottom: 1.2rem;
-  letter-spacing: normal;
+  letter-spacing: 0.05em;
 }
-.panel-text strong { color: #ee290f; font-weight: 700; }
+.panel-text strong { color: #d43535; font-weight: 700; }
 .panel-sub {
   font-family: var(--font-m);
   font-size: 0.72rem;

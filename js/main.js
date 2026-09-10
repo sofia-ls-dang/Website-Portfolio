@@ -143,11 +143,12 @@ const LANG_COLORS = {
 
 function getExtraTags(repoName) {
   const tags = {
-    'Website-Portfolio': ['HTML', 'JavaScript', 'PHP', 'Docker'],
-    'SlugShack': ['Python', 'Streamlit', 'Flowise'],
+    'website-portfolio': ['HTML', 'JavaScript', 'PHP', 'Docker'],
+    'ultimate-foid-machine': ['React Native', 'Expo', 'Supabase'],
+    'comptia-studying-app': ['React', 'Vite', 'Node.js', 'PostgreSQL', 'Docker'],
   };
   const name = repoName.toLowerCase();
-  const match = Object.keys(tags).find(k => name.includes(k.toLowerCase()));
+  const match = Object.keys(tags).find(k => name.includes(k));
   if (!match) return '';
   return tags[match]
     .map(t => `<span class="project-tag">${t}</span>`)
@@ -158,7 +159,7 @@ async function fetchRepos() {
   if (reposFetched) return;
   const grid = document.getElementById('projectsGrid');
   try {
-    const res   = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=12`);
+    const res   = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=20`);
     if (!res.ok) throw new Error();
     const repos = await res.json();
     const own   = repos.filter(r => !r.fork);
@@ -202,8 +203,8 @@ async function submitForm() {
   const message = document.getElementById('message').value.trim();
   const btn     = document.querySelector('.btn-p5');
 
-  if (!name || !email || !message) { showMsg('// INCOMPLETE TRANSMISSION', 'error'); return; }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showMsg('// INVALID EMAIL FORMAT', 'error'); return; }
+  if (!name || !email || !message) { showMsg('// Please fill out form', 'error'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showMsg('// Invalid email format', 'error'); return; }
 
   btn.textContent = 'TRANSMITTING...';
   btn.disabled    = true;

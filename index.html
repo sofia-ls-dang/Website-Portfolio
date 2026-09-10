@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="css/style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <body>
 
   <!-- Atmosphere layers -->
@@ -43,7 +45,7 @@
         <a class="menu-item active" data-section="about"    href="#" tabindex="0">
           <div class="item-highlight"></div>
           <span class="item-num">01</span>
-          <span class="item-label">ABOUT ME</span>
+          <span class="item-label">ABOUT</span>
         </a>
         <a class="menu-item" data-section="projects"  href="#" tabindex="0">
           <div class="item-highlight"></div>
@@ -84,7 +86,7 @@
       <section class="panel active" id="panel-about">
         <div class="panel-header">
           <span class="panel-num">01</span>
-          <h2 class="panel-title">ABOUT ME</h2>
+          <h2 class="panel-title">ABOUT</h2>
         </div>
         <div class="panel-body">
           <div class="about-layout">
@@ -101,15 +103,15 @@
               </div>
               <div class="photo-id">
                 <span class="photo-id-name">SOFIA DANG</span>
-                <span class="photo-id-role">CS · NETWORK SECURITY · MACHINE LEARNING · WEB DEV</span>
+                <span class="photo-id-role">CS · NETWORK SECURITY · SWE · AI/ML</span>
               </div>
             </div>
 
             <!-- Info column -->
             <div class="about-info-col">
-              <p class="panel-text">Recent graduate from <strong>UC Santa Cruz</strong>, concentrating in <strong>network security</strong>, <strong>machine learning</strong>, and <strong>website design</strong>. Seeking roles in IT, cybersecurity, full-stack, and software engineering.</p>
-              <p class="panel-text">Throughout my 4 years at UCSC, I was a member of the <strong>BEES Program</strong> (Baskin Engineering Excellence Scholars) and <strong>MESA Program</strong> (Mathematics, Engineering, Science, Achievement). Currently, I am studying for the <strong>CompTIA A+</strong> and <strong>Azure Administrator Associate</strong> (AZ-104) certifications.</p>
-              <p class="panel-text">In my free time, I enjoy playing RPG and FPS games, going to soccer pick ups, and watching anime/tv/movies/sports.</p>
+              <p class="panel-text">Recent graduate from <strong>UC Santa Cruz</strong>, with a <strong>B.S. in Computer Science</strong>. Seeking roles in <strong>IT, network security, AI/ML, and software engineering</strong>. Throughout my 4 years at UCSC, I was a member of the <strong>BEES Program</strong> (Baskin Engineering Excellence Scholars) and <strong>MESA Program</strong> (Mathematics, Engineering, Science, Achievement).</p>
+              <p class="panel-text">I am currently in the NPower IT Support Specialist Program studying for the <strong>CompTIA A+</strong>, <strong>CompTIA Tech+</strong>, and <strong>Google IT Support Certificate</strong>. I am also a <strong>Seasonal Specialist</strong> at the Valley Fair <strong>Apple Store</strong>.</p>
+              <p class="panel-text">In my free time, I enjoy playing RPG and FPS games, going to soccer pick ups, digital drawing, and watching anime/tv/movies/sports.</p>
               
             <!-- Technologies box -->
             <div class="logo-box">
@@ -134,6 +136,7 @@
                 <div class="logo-item"><img src="assets/logos/UC Santa Cruz Logo - White.png" class="logo-img"/></div>
                 <div class="logo-item"><img src="assets/logos/bees-ucsc.png" class="logo-img"/></div>
                 <div class="logo-item"><img src="assets/logos/mesa-ucsc.png" class="logo-img"/></div>
+                <div class="logo-item"><img src="assets/logos/NPower logo.png" class="logo-img"/></div>
               </div>
             </div>
             </div>
@@ -165,39 +168,32 @@
         <div class="panel-body">
           <div class="course-list">
             <div class="course-row">
+              <span class="course-code">CSE 150</span>
+              <span class="course-name">Introduction to Computer Networks</span>
+            </div>
+            <div class="course-row">
               <span class="course-code">CSE 153</span>
               <span class="course-name">Network Security &amp; Privacy</span>
-              <span class="course-tag">SECURITY</span>
             </div>
             <div class="course-row">
               <span class="course-code">CSE 140</span>
               <span class="course-name">Artificial Intelligence / ML</span>
-              <span class="course-tag">AI/ML</span>
-            </div>
-            <div class="course-row">
-              <span class="course-code">CSE 114A</span>
-              <span class="course-name">Functional Programming (Haskell)</span>
-              <span class="course-tag">PL</span>
-            </div>
-            <div class="course-row">
-              <span class="course-code">CSE 130</span>
-              <span class="course-name">Operating Systems</span>
-              <span class="course-tag">SYSTEMS</span>
-            </div>
-            <div class="course-row">
-              <span class="course-code">CSE 185</span>
-              <span class="course-name">Technical Writing</span>
-              <span class="course-tag">WRITING</span>
-            </div>
-            <div class="course-row">
-              <span class="course-code">CSE 100</span>
-              <span class="course-name">Computer Architecture / FPGA</span>
-              <span class="course-tag">HW</span>
             </div>
             <div class="course-row">
               <span class="course-code">CSE 101M</span>
-              <span class="course-name">Discrete Math</span>
-              <span class="course-tag">MATH</span>
+              <span class="course-name">Mathematical Thinking for Computer Science</span>
+            </div>
+            <div class="course-row">
+              <span class="course-code">CSE 114A</span>
+              <span class="course-name">Foundations of Programming Languages</span>
+            </div>
+            <div class="course-row">
+              <span class="course-code">CSE 130</span>
+              <span class="course-name">Principles of Computer Systems Design</span>
+            </div>
+            <div class="course-row">
+              <span class="course-code">CSE 185</span>
+              <span class="course-name">Technical Writing for Computer Science and Engineering</span>
             </div>
           </div>
         </div>
