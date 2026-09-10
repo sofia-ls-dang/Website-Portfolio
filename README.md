@@ -12,7 +12,7 @@ A fully custom portfolio website featuring animated menu transitions, a slide-ou
  
 ---
  
-✨## Features
+## ✨ Features
  
 - **Animated slide-out menu** - hidden off-screen, revealed on hover with a smooth transition
 - **Red wipe transitions** - full-screen clip-path animation between sections
@@ -23,7 +23,7 @@ A fully custom portfolio website featuring animated menu transitions, a slide-ou
 - **Docker support** - local development with Apache + PHP via Docker Compose
 ---
  
-🛠️ ## Tech Stack
+## 🛠️ Tech Stack
  
 | Layer | Technology |
 |---|---|
@@ -38,7 +38,7 @@ A fully custom portfolio website featuring animated menu transitions, a slide-ou
  
 ---
  
-📝 ## Sections
+## 📝 Sections
  
 - **About** - bio, photo, technology logos, education & program logos
 - **Projects** - live-fetched from GitHub API with custom tech stack tags
@@ -47,7 +47,7 @@ A fully custom portfolio website featuring animated menu transitions, a slide-ou
 - **Contact** - PHP-powered contact form
 ---
  
-⚙️ ## Setup
+## ⚙️ Setup
  
 ### With Docker (recommended — enables PHP contact form)
  
@@ -73,7 +73,7 @@ http://localhost:8081
  
 ---
  
-🗂️ ## Project Structure
+## 🗂️ Project Structure
  
 ```
 Website-Portfolio/
@@ -94,7 +94,7 @@ Website-Portfolio/
  
 ---
  
-🖋 ## What I Learned Building This
+## 🖋 What I Learned Building This
  
 - **CSS clip-path animations** - the red wipe transition and angled menu highlight bars are built entirely with `clip-path: polygon()` and CSS keyframes
 - **Web Audio API** - generating click and hover sounds programmatically without any audio files
@@ -104,7 +104,7 @@ Website-Portfolio/
 - **Docker + Apache** - containerizing a PHP site for reproducible local development
 ---
  
-📫 ## Contact
+## 📫 Contact
  
 **Sofia Dang**
 - Portfolio: [sofia-ls-dang.github.io/Website-Portfolio](https://sofia-ls-dang.github.io/Website-Portfolio)
