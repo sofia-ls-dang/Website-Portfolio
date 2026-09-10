@@ -12,7 +12,7 @@ A fully custom portfolio website featuring animated menu transitions, a slide-ou
  
 ---
  
-✨ ## Features
+✨## Features
  
 - **Animated slide-out menu** - hidden off-screen, revealed on hover with a smooth transition
 - **Red wipe transitions** - full-screen clip-path animation between sections
